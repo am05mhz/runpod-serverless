@@ -24,3 +24,6 @@ jobs:
       
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag am05mhz/runpod-serverless:$(date +%s)
+
+    - name: Push the build
+      run: docker push am05mhz/runpod-serverless:$(date +%s)
