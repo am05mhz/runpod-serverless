@@ -35,5 +35,5 @@ jobs:
         context: .
         push: true
         tags: ${{ vars.DOCKER_HUB_USERNAME }}/runpod-serverless:latest
-        cache-from: type=gha # Use GitHub Actions cache
-        cache-to: type=gha,mode=max # Store cache in GitHub Actions
+        # cache-from: type=gha # Use GitHub Actions cache
+        # cache-to: type=gha,mode=max # Store cache in GitHub Actions
