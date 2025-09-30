@@ -7,3 +7,5 @@ RUN comfy-node-install ComfyUI-KJNodes ComfyUI-IC-Light \
     ComfyUI_LayerStyle ComfyUI_LayerStyle_Advance \
     ComfyUI-DepthAnythingV2 ComfyUI_BiRefNet_ll stability-ComfyUI-nodes \
     ComfyUI_Zwng_Nodes ComfyUI-Nikosis-Preprocessors ComfyUI_essentials
+
+RUN pip install -r /comfyui/custom_nodes/ComfyUI-KJNodes/requirements.txt
