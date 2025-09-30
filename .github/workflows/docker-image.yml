@@ -16,8 +16,8 @@ jobs:
     - name: Maximize build disk space
       uses: easimon/maximize-build-disk-space@v1
       with:
-        root-reserve-mb: 5120 # Reserve 512MB on the root volume
-        temp-reserve-mb: 5120 # Reserve 512MB on the temporary volume
+        root-reserve-mb: 5120 # Reserve 5120MB on the root volume
+        temp-reserve-mb: 5120 # Reserve 5120MB on the temporary volume
         overprovision-lvm: true # Use LVM overprovisioning if available
         
     - name: Checkout
