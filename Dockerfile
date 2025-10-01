@@ -1,11 +1,13 @@
 # start from a clean base image
 FROM runpod/worker-comfyui:5.4.1-base
 
-# install custom nodes using comfy-cli
-RUN comfy-node-install ComfyUI-KJNodes ComfyUI-IC-Light \
-    ComfyUI-RMBG comfyui_controlnet_aux ComfyUI_IPAdapter_plus \
-    ComfyUI_LayerStyle ComfyUI_LayerStyle_Advance \
-    ComfyUI-DepthAnythingV2 ComfyUI_BiRefNet_ll stability-ComfyUI-nodes \
-    ComfyUI_Zwng_Nodes ComfyUI-Nikosis-Preprocessors ComfyUI_essentials
+RUN mkdir /setup
+COPY custom_nodes.txt /setup/custom_nodes.txt
 
-RUN pip install -r /comfyui/custom_nodes/ComfyUI-KJNodes/requirements.txt
+# install custom nodes
+RUN echo "installing custom nodes"
+WORKDIR /comfyui/custom_nodes
+RUN xargs -n 1 git clone --recursive < /setup/custom_nodes.txt && \
+    find /comfyui/custom_nodes -name "requirements.txt" -exec uv pip install --no-cache-dir -r {} \; && \
+    find /comfyui/custom_nodes -name "install.py" -exec uv python {} \; ;
+RUN echo "custom nodes installed"
