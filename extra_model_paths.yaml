@@ -11,6 +11,7 @@ extra_paths:
   embeddings: models/embeddings/
   gligen: models/gligen/
   hypernetworks: models/hypernetworks/
+  ipadapter: models/ipadapter/
   loras: models/loras/
   model_patches: models/model_patches/
   onnx: models/onnx/
