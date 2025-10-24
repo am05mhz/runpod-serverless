@@ -13,3 +13,4 @@ RUN xargs -n 1 git clone --recursive < /setup/custom_nodes.txt && \
     find /comfyui/custom_nodes -name "install.py" -exec uv python {} \; ;
 RUN echo "custom nodes installed"
 
+COPY handler.py /handler.py

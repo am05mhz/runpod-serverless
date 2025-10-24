@@ -20,3 +20,7 @@ https://github.com/chflame163/ComfyUI_LayerStyle_Advance.git
 https://github.com/1038lab/ComfyUI-RMBG.git
 https://github.com/Fannovel16/comfyui_controlnet_aux.git
 https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+https://github.com/yolain/ComfyUI-Easy-Use.git
+https://github.com/kijai/ComfyUI-IC-Light.git
+https://github.com/huchenlei/ComfyUI-IC-Light-Native.git
+https://github.com/HM-RunningHub/ComfyUI_RH_DreamOmni2.git
