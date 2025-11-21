@@ -15,7 +15,9 @@ RUN echo "custom nodes installed"
 
 COPY /inputs/* /comfyui/input/
 
-COPY --chmod=755 pre-start.sh /pre-start.sh
-CMD ["/pre-start.sh"]
+# COPY --chmod=755 pre-start.sh /pre-start.sh
 
-# COPY handler.py /handler.py
+# Copy your handler code
+COPY src/handler.py .
+
+CMD ["/start.sh"]

@@ -165,7 +165,6 @@ def validate_input(job_input):
     if workflow is None and images is None:
         return None, "Missing 'workflow' or 'images' parameter"
 
-
     # Optional: API key for Comfy.org API Nodes, passed per-request
     comfy_org_api_key = job_input.get("comfy_org_api_key")
 
@@ -522,6 +521,8 @@ def handler(job):
 
         prompt_history = history.get(prompt_id, {})
         outputs = prompt_history.get("outputs", {})
+
+        print(outputs)  //
 
         if not outputs:
             warning_msg = f"No outputs found in history for prompt {prompt_id}."
