@@ -1,5 +1,5 @@
 # start from a clean base image
-FROM runpod/worker-comfyui:5.4.1-base
+FROM runpod/worker-comfyui:5.5.1-base
 
 RUN mkdir /setup
 COPY custom_nodes.txt /setup/custom_nodes.txt
