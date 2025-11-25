@@ -26,3 +26,4 @@ https://github.com/huchenlei/ComfyUI-IC-Light-Native.git
 https://github.com/rgthree/rgthree-comfy.git
 https://github.com/MixLabPro/comfyui-mixlab-nodes.git
 https://github.com/HM-RunningHub/ComfyUI_RH_DreamOmni2.git
+https://github.com/Layer-norm/comfyui-lama-remover.git
