@@ -18,6 +18,6 @@ COPY /inputs/* /comfyui/input/
 # COPY --chmod=755 pre-start.sh /pre-start.sh
 
 # Copy your handler code
-COPY src/handler.py .
+COPY src/handler.py /
 
 CMD ["/start.sh"]
