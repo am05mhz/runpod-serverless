@@ -10,7 +10,7 @@ RUN echo "installing custom nodes"
 WORKDIR /comfyui/custom_nodes
 RUN xargs -n 1 git clone --recursive < /setup/custom_nodes.txt
 RUN find /comfyui/custom_nodes -name "requirements.txt" -exec uv pip install --no-cache-dir -r {} \;
-RUN find /comfyui/custom_nodes -name "install.py" -exec uv run python {} \;
+RUN find /comfyui/custom_nodes -name "install.py" -exec python {} \;
 RUN echo "custom nodes installed"
 
 COPY /inputs/* /comfyui/input/
