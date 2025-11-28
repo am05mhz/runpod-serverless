@@ -9,8 +9,8 @@ COPY extra_model_paths.yaml /comfyui/extra_model_paths.yaml
 RUN echo "installing custom nodes"
 WORKDIR /comfyui/custom_nodes
 RUN xargs -n 1 git clone --recursive < /setup/custom_nodes.txt
-RUN find /comfyui/custom_nodes -name "requirements.txt" | xargs -I {} uv pip install --no-cache-dir -r {}
-RUN find /comfyui/custom_nodes -name "install.py" | xargs -I {} uv python {}
+RUN find /comfyui/custom_nodes -name "requirements.txt" -exec uv pip install --no-cache-dir -r {}
+RUN find /comfyui/custom_nodes -name "requirements.txt" -exec uv python {}
 RUN echo "custom nodes installed"
 
 COPY /inputs/* /comfyui/input/
