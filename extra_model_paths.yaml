@@ -17,6 +17,7 @@ extra_paths:
   onnx: models/onnx/
   photomaker: models/photomaker/
   sams: models/sams/
+  sam3: models/sam3/
   style_models: models/style_models/
   text_encoders: models/text_encoders/
   ultralytics: models/ultralytics/
