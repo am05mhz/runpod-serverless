@@ -1,5 +1,5 @@
-https://github.com/kijai/ComfyUI-KJNodes.git
-https://github.com/Smirnov75/ComfyUI-mxToolkit.git
+https://github.com/kijai/ComfyUI-KJNodes.git                    ComfyUI-KJNodes
+https://github.com/Smirnov75/ComfyUI-mxToolkit.git              ComfyUI-mxToolkit
 https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
 https://github.com/cubiq/ComfyUI_essentials.git
 https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
@@ -25,10 +25,9 @@ https://github.com/kijai/ComfyUI-IC-Light.git
 https://github.com/huchenlei/ComfyUI-IC-Light-Native.git
 https://github.com/rgthree/rgthree-comfy.git
 https://github.com/MixLabPro/comfyui-mixlab-nodes.git
-https://github.com/HM-RunningHub/ComfyUI_RH_DreamOmni2.git
 https://github.com/Layer-norm/comfyui-lama-remover.git
-https://github.com/PozzettiAndrea/ComfyUI-SAM3.git
 https://github.com/sipherxyz/comfyui-art-venture.git
 https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git
 https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
 https://github.com/lrzjason/Comfyui-QwenEditUtils.git
+https://github.com/WASasquatch/was-node-suite-comfyui.git
