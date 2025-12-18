@@ -28,3 +28,6 @@ https://github.com/MixLabPro/comfyui-mixlab-nodes.git
 https://github.com/HM-RunningHub/ComfyUI_RH_DreamOmni2.git
 https://github.com/Layer-norm/comfyui-lama-remover.git
 https://github.com/PozzettiAndrea/ComfyUI-SAM3.git
+https://github.com/sipherxyz/comfyui-art-venture.git
+https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git
+https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
