@@ -13,6 +13,8 @@ RUN find /comfyui/custom_nodes -name "requirements.txt" -exec uv pip install --n
 RUN find /comfyui/custom_nodes -name "install.py" -exec python {} \;
 RUN echo "custom nodes installed"
 
+ENV HF_HOME="/runpod-volume/.cache/huggingface"
+
 COPY /inputs/* /comfyui/input/
 
 WORKDIR /comfyui
