@@ -11,5 +11,15 @@ setup_ssh() {
     fi
 }
 
+setup_LLava() {
+    if [ ! -d "/comfyui/models/LLavacheckpoints" ]; then
+        if [ -f "/comfyui/models/LLavacheckpoints" ]; then
+            rm /comfyui/models/LLavacheckpoints
+        fi
+        ln -s /runpod-volume/models/LLavacheckpoints /comfyui/models/LLavacheckpoints
+    fi
+}
+
 setup_ssh
+setup_LLava
 bash "/start.sh"

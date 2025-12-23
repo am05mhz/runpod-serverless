@@ -21,9 +21,9 @@ WORKDIR /comfyui
 RUN git pull origin master
 RUN uv pip install --no-cache-dir -r requirements.txt
 
-# COPY --chmod=755 pre-start.sh /pre-start.sh
+COPY --chmod=755 pre-start.sh /pre-start.sh
 
 # Copy your handler code
 COPY src/handler.py /
 
-CMD ["/start.sh"]
+CMD ["/pre-start.sh"]
