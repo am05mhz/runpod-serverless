@@ -31,3 +31,7 @@ https://github.com/BadCafeCode/masquerade-nodes-comfyui.git
 https://github.com/Stability-AI/stability-ComfyUI-nodes.git
 https://github.com/WASasquatch/was-node-suite-comfyui.git
 https://github.com/rgthree/rgthree-comfy.git
+https://github.com/jamesWalker55/comfyui-various.git
+https://github.com/1038lab/ComfyUI-QwenVL.git
+https://github.com/benjiyaya/ComfyUI-QwenImageLayeredToLength.git
+https://github.com/calcuis/gguf.git
