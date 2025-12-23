@@ -27,3 +27,5 @@ extra_paths:
   vae_approx: models/vae_approx/
   BiRefNet: models/BiRefNet/
   RMBG: models/RMBG/
+  LLavacheckpoints: models/LLavacheckpoints/
+  LLM: models/LLM/
